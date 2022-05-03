@@ -1,3 +1,5 @@
+import exceptions.OperacaoInvalidaException;
+
 public class ContaBancariaBasica {
     private String numeracao;
     protected double saldo = 0;
