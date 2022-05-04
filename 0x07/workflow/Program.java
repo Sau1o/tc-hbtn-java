@@ -1,37 +1,44 @@
-import atividades.CarregarVideo;
-import atividades.CodificarVideo;
-import atividades.EnviarEmail;
-import atividades.ModificarStatusVideo;
-
 public class Program {
     public static void main(String[] args) {
-        MaquinaWorkflow maquinaWorkflow = new MaquinaWorkflow();
+        ProcessadorVideo processadorVideo1 = new ProcessadorVideo();
+        processadorVideo1.registrarCanal(new Slack());
+        processadorVideo1.registrarCanal(new Teams());
 
-        Workflow workflowEncodificarVideos = new Workflow();
+        ProcessadorVideo processadorVideo2 = new ProcessadorVideo();
+        processadorVideo2.registrarCanal(new Slack());
+        processadorVideo2.registrarCanal(new Email());
 
-        workflowEncodificarVideos.registrarAtividade(new CarregarVideo());
-        workflowEncodificarVideos.registrarAtividade(new CodificarVideo());
-        workflowEncodificarVideos.registrarAtividade(new EnviarEmail());
+        ProcessadorVideo processadorVideo3 = new ProcessadorVideo();
+        processadorVideo3.registrarCanal(new Sms());
 
-        maquinaWorkflow.executar(workflowEncodificarVideos);
+        ProcessadorVideo processadorVideo4 = new ProcessadorVideo();
 
-        System.out.println("-----");
+        ProcessadorVideo processadorVideo5 = new ProcessadorVideo();
+        processadorVideo5.registrarCanal(new Sms());
+        processadorVideo5.registrarCanal(new Slack());
+        processadorVideo5.registrarCanal(new Email());
+        processadorVideo5.registrarCanal(new Teams());
 
-        Workflow workflowVideos = new Workflow();
+        Video video1 = new Video("video1.mpg", FormatoVideo.MPEG);
+        Video video2 = new Video("video2.avi", FormatoVideo.AVI);
+        Video video3 = new Video("video3.mkv", FormatoVideo.MKV);
 
-        workflowVideos.registrarAtividade(new CarregarVideo());
-        workflowVideos.registrarAtividade(new EnviarEmail());
+        processadorVideo1.processar(video1);
 
-        maquinaWorkflow.executar(workflowVideos);
+        System.out.println();
 
-        System.out.println("-----");
+        processadorVideo2.processar(video1);
 
-        Workflow workflowVideosStatus = new Workflow();
+        System.out.println();
 
-        workflowVideosStatus.registrarAtividade(new CarregarVideo());
-        workflowVideosStatus.registrarAtividade(new ModificarStatusVideo());
-        workflowVideosStatus.registrarAtividade(new EnviarEmail());
+        processadorVideo3.processar(video2);
 
-        maquinaWorkflow.executar(workflowVideosStatus);
+        System.out.println();
+
+        processadorVideo4.processar(video3);
+
+        System.out.println();
+
+        processadorVideo5.processar(video3);
     }
 }
