@@ -1,4 +1,8 @@
 import java.util.Locale;
+import provedores.JadLog;
+import provedores.Sedex;
+import provedores.Loggi;
+import provedores.ProvedorFrete;
 
 public class Program {
     public static void main(String[] args) {

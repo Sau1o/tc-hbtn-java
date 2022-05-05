@@ -1,3 +1,5 @@
+import provedores.ProvedorFrete;
+
 public class ProcessadorPedido {
     private ProvedorFrete provedorFrete;
 
