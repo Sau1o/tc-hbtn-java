@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Comida {
     private String nome;
     private double calorias;

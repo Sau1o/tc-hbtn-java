@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Eletronico {
     private String descricao;
     private double valor;
