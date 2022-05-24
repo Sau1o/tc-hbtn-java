@@ -1,12 +1,12 @@
-import java.text.NumberFormat;
-import java.util.Locale;
+//import java.text.NumberFormat;
+//import java.util.Locale;
 
 public class Comida {
     private String nome;
     private double calorias;
     private double preco;
 
-    NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
+//    NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
     
     public Comida(String nome, double calorias, double preco) {
         this.nome = nome;
