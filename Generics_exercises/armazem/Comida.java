@@ -28,7 +28,7 @@ public class Comida {
 
     @Override
     public String toString() {
-        return String.format("[%s] %f %s",
-            getNome(), getCalorias(), formatter.format(getPreco()));
+        return String.format("[%s] %f R$ %f",
+            getNome(), getCalorias(), getPreco());
     }
 }

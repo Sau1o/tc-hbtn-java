@@ -22,7 +22,7 @@ public class Eletronico {
 
     @Override
     public String toString() {
-        return String.format("[%s] %s",
-            getDescricao(), formatter.format(getValor()));
+        return String.format("[%s] R$ %f",
+            getDescricao(), getValor());
     }
 }
