@@ -12,7 +12,7 @@ public class Program {
             estudante1, estudante2, estudante3, estudante4, estudante5
         );
 
-        SerializarEstudantes serializarEstudantes1 = new SerializarEstudantes("estudantes.data");
+        SerializarEstudantes<Estudante> serializarEstudantes1 = new SerializarEstudantes<Estudante>("estudantes.data");
         serializarEstudantes1.serializar(estudantes);
 
         List<Estudante> listaDesserializacao1 = serializarEstudantes1.desserializar();
@@ -21,8 +21,7 @@ public class Program {
             System.out.println(e);
         }
 
-        SerializarEstudantes serializarEstudantes2 = new SerializarEstudantes("estudantes1.data");
+        SerializarEstudantes<Estudante> serializarEstudantes2 = new SerializarEstudantes<Estudante>("estudantes1.data");
         List<Estudante> listaDesserializacao2 = serializarEstudantes2.desserializar();
     }
 }
-

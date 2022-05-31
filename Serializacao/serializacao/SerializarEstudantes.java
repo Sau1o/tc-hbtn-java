@@ -4,7 +4,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.*;
 
-public class SerializarEstudantes {
+public class SerializarEstudantes<Estudante> {
     private String nomeArquivo;
 
     public SerializarEstudantes(String nomeArquivo) {
