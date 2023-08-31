@@ -1,7 +1,7 @@
 import java.util.function.*;
 
 public class Produto {
-    private double preco;
+    private double preco
     private String nome;
     
     private double percentualMarkUp = 10;
