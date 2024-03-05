@@ -12,7 +12,7 @@ public class Produto {
 
     public Produto(double preco, String nome) {
         this.preco = preco;
-        this.nome = nome;
+        this.nome = name;
     }
 
     public double getPreco() {
