@@ -1,52 +1,52 @@
 public class Program {
     public static void main(String[] args) {
         try {
-            Inteiro_positivo Inteiro_positivo = new Inteiro_positivo("1");
-            System.out.println(Inteiro_positivo.getValor() + " - " + Inteiro_positivo.ehPrimo());
+            InteiroPositivo InteiroPositivo = new InteiroPositivo("1");
+            System.out.println(InteiroPositivo.getValor() + " - " + InteiroPositivo.ehPrimo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
 
-        Inteiro_positivo Inteiro_positivo1 = null;
+        InteiroPositivo InteiroPositivo1 = null;
 
         try {
-            Inteiro_positivo1 = new Inteiro_positivo("43");
-            System.out.println(Inteiro_positivo1.getValor() + " - " + Inteiro_positivo1.ehPrimo());
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-
-        try {
-            Inteiro_positivo1.setValor(-1);
-            System.out.println(Inteiro_positivo1.getValor() + " - " + Inteiro_positivo1.ehPrimo());
+            InteiroPositivo1 = new InteiroPositivo("43");
+            System.out.println(InteiroPositivo1.getValor() + " - " + InteiroPositivo1.ehPrimo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            Inteiro_positivo1.setValor(Inteiro_positivo1.getValor() + 1);
-            System.out.println(Inteiro_positivo1.getValor() + " - " + Inteiro_positivo1.ehPrimo());
+            InteiroPositivo1.setValor(-1);
+            System.out.println(InteiroPositivo1.getValor() + " - " + InteiroPositivo1.ehPrimo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            Inteiro_positivo Inteiro_positivo = new Inteiro_positivo("-3");
-            System.out.println(Inteiro_positivo.getValor() + " - " + Inteiro_positivo.ehPrimo());
+            InteiroPositivo1.setValor(InteiroPositivo1.getValor() + 1);
+            System.out.println(InteiroPositivo1.getValor() + " - " + InteiroPositivo1.ehPrimo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            Inteiro_positivo Inteiro_positivo = new Inteiro_positivo(379);
-            System.out.println(Inteiro_positivo.getValor() + " - " + Inteiro_positivo.ehPrimo());
+            InteiroPositivo InteiroPositivo = new InteiroPositivo("-3");
+            System.out.println(InteiroPositivo.getValor() + " - " + InteiroPositivo.ehPrimo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            Inteiro_positivo Inteiro_positivo = new Inteiro_positivo(378);
-            System.out.println(Inteiro_positivo.getValor() + " - " + Inteiro_positivo.ehPrimo());
+            InteiroPositivo InteiroPositivo = new InteiroPositivo(379);
+            System.out.println(InteiroPositivo.getValor() + " - " + InteiroPositivo.ehPrimo());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        try {
+            InteiroPositivo InteiroPositivo = new InteiroPositivo(378);
+            System.out.println(InteiroPositivo.getValor() + " - " + InteiroPositivo.ehPrimo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }

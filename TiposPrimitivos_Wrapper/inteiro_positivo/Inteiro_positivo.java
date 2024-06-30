@@ -1,4 +1,4 @@
-public class Inteiro_positivo {
+public class InteiroPositivo {
     private int valor;
 
     public InteiroPositivo(int valor) {
