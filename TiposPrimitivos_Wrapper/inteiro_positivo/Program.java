@@ -17,14 +17,14 @@ public class Program {
         }
 
         try {
-            InteiroPositivo1.setValor(-1);
+            InteiroPositivo1.setValue(-1);
             System.out.println(InteiroPositivo1.getValue() + " - " + InteiroPositivo1.ehPrimo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            InteiroPositivo1.setValor(InteiroPositivo1.getValue() + 1);
+            InteiroPositivo1.setValue(InteiroPositivo1.getValue() + 1);
             System.out.println(InteiroPositivo1.getValue() + " - " + InteiroPositivo1.ehPrimo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
