@@ -9,7 +9,7 @@ public class InteiroPositivo {
         setValue(Integer.parseInt(value));
     }
 
-    public int getvalue() {
+    public int getValue() {
         return value;
     }
 
