@@ -15,7 +15,7 @@ public class InteiroPositivo {
 
     public void setValor(int valor) {
         if (valor < 0) {
-            throw new IllegalArgumentException("valor nao eh um valor inteiro positivo");
+            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
         }
         this.valor = valor;
     }
