@@ -2,7 +2,7 @@ public class InteiroPositivo {
     private int valor;
 
     public InteiroPositivo(int valor) {
-        setValor(valor);
+        setvalor(valor);
     }
 
     public InteiroPositivo(String valor) {
