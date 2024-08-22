@@ -1,7 +1,7 @@
 public class InteiroPositivo {
-    private int valor;
+    private float valor;
 
-    public InteiroPositivo(int valor) {
+    public InteiroPositivo(float valor) {
         setValor(valor);
     }
 
@@ -29,6 +29,6 @@ public class InteiroPositivo {
                 return false;
         }
 
-        return true;
+        return false;
     }
 }
