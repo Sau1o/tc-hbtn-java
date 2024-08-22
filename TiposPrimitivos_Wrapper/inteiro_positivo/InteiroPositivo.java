@@ -1,8 +1,8 @@
 public class InteiroPositivo {
-    private int valor;
+    private float valor;
 
     public InteiroPositivo(int valor) {
-        setvalor(valor);
+        setValor(valor);
     }
 
     public InteiroPositivo(String valor) {
@@ -15,7 +15,7 @@ public class InteiroPositivo {
 
     public void setValor(int valor) {
         if (valor < 0) {
-            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
+            throw new IllegalArgumentException("Valor eh um valor inteiro positivo");
         }
         this.valor = valor;
     }
