@@ -1,8 +1,7 @@
 public class InteiroPositivo {
-    // private int valor;
+    
     private float valor;
 
-    // public InteiroPositivo(int valor){
     public InteiroPositivo(float valor) {
         setValor(valor);
     }
