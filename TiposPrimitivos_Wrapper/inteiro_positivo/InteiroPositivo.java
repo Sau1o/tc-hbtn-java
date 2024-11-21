@@ -1,8 +1,8 @@
 public class InteiroPositivo {
     
-    private float valor;
+    private int valor;
 
-    public InteiroPositivo(float valor) {
+    public InteiroPositivo(int valor) {
         setValor(valor);
     }
 
@@ -29,7 +29,6 @@ public class InteiroPositivo {
             if (valor % i == 0)
                 return false;
         }
-        // return true;
-        return false;
+        return true;
     }
 }
