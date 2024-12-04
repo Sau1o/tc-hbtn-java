@@ -25,7 +25,7 @@ public class Tarefa {
     }
 
     public void modificarDescricao(String descricao) {
-        if (descricao == null || descricao == "") {
+        if (descricao == null || descricao.equals("")) {
             throw new IllegalArgumentException("Descricao de tarefa invalida");
         }
 
