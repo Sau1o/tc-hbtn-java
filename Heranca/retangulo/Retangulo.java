@@ -9,11 +9,6 @@ public class Retangulo extends FormaGeometrica {
     // Formatter para usar ponto decimal
     private static final DecimalFormat df = new DecimalFormat("#.##");
 
-    static {
-        // Garante o uso do ponto decimal no formato numérico
-        df.setDecimalFormatSymbols(DecimalFormatSymbols.getInstance(Locale.US));
-    }
-
     public double getAltura() {
         return altura;
     }
