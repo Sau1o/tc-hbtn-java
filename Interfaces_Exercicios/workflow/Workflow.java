@@ -12,7 +12,7 @@ public class Workflow {
         return atividades;
     }
 
-    public void RegistrarAtividade(Atividade atividade) {
+    public void registrarAtividade(Atividade atividade) {
         this.atividades.add(atividade);
     }
 }
