@@ -6,9 +6,9 @@ public class Program {
         
         Workflow workflowEncodificarVideos = new Workflow();
 
-        workflowEncodificarVideos.RegistrarAtividade(new CarregarVideo());
-        workflowEncodificarVideos.RegistrarAtividade(new CodificarVideo());
-        workflowEncodificarVideos.RegistrarAtividade(new EnviarEmail());
+        workflowEncodificarVideos.registrarAtividade(new CarregarVideo());
+        workflowEncodificarVideos.registrarAtividade(new CodificarVideo());
+        workflowEncodificarVideos.registrarAtividade(new EnviarEmail());
         
         maquinaWorkflow.executar(workflowEncodificarVideos);
 
@@ -16,8 +16,8 @@ public class Program {
 
         Workflow workflowVideos = new Workflow();
 
-        workflowVideos.RegistrarAtividade(new CarregarVideo());
-        workflowVideos.RegistrarAtividade(new EnviarEmail());
+        workflowVideos.registrarAtividade(new CarregarVideo());
+        workflowVideos.registrarAtividade(new EnviarEmail());
 
         maquinaWorkflow.executar(workflowVideos);
 
@@ -25,9 +25,9 @@ public class Program {
 
         Workflow workflowVideosStatus = new Workflow();
 
-        workflowVideosStatus.RegistrarAtividade(new CarregarVideo());
-        workflowVideosStatus.RegistrarAtividade(new ModificarStatusVideo());
-        workflowVideosStatus.RegistrarAtividade(new EnviarEmail());
+        workflowVideosStatus.registrarAtividade(new CarregarVideo());
+        workflowVideosStatus.registrarAtividade(new ModificarStatusVideo());
+        workflowVideosStatus.registrarAtividade(new EnviarEmail());
 
         maquinaWorkflow.executar(workflowVideosStatus);        
     }
