@@ -12,7 +12,7 @@ public class Consulta {
     public static Produto obterProdutoMaiorPreco(List<Produto> produtos) {
         return produtos.stream()
                        .sorted(Comparator.comparing(Produto::getPreco).reversed())
-                       .collect(Collectors.toList()
+                       .collect(Collectors.toList())
                        .get(0);
     }
 }
