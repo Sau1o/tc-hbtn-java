@@ -1,3 +1,7 @@
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
+
 package provedores;
 
 public class Frete {
@@ -10,7 +14,11 @@ public class Frete {
     }
 
     public double getValor() {
-        return valor;
+        // Configurando o formato decimal com vírgula como separador
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(new Locale("pt", "BR"));
+        symbols.setDecimalSeparator(',');
+        DecimalFormat df = new DecimalFormat("0.00", symbols);
+        return df.format(valor);
     }
 
     public void setValor(double valor) {
