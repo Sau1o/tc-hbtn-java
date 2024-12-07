@@ -1,10 +1,11 @@
 import atividades.*;
+import java.util.Locale;
 
 public class Program {
     public static void main(String[] args) {
 
         Locale.setDefault(new Locale("pt", "BR"));
-        
+
         MaquinaWorkflow maquinaWorkflow = new MaquinaWorkflow();
         
         Workflow workflowEncodificarVideos = new Workflow();
