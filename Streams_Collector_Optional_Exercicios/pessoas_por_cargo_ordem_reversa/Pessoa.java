@@ -8,8 +8,8 @@ public class Pessoa implements Comparable {
     private int idade;
     private double salario;
 
-    // NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
-    Locale.setDefault(new Locale("pt", "BR"));
+    NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
+    // Locale.setDefault(new Locale("pt", "BR"));
     public Pessoa(int codigo, String nome, String cargo, int idade, double salario) {
         this.codigo = codigo;
         this.nome = nome;
@@ -41,8 +41,8 @@ public class Pessoa implements Comparable {
     @Override
     public String toString() {
         return String.format("[%d] %s %s %d %s", getCodigo(),
-            // getNome(), getCargo(), getIdade(), formatter.format(getSalario()));
-            getNome(), getCargo(), getIdade(), getSalario());
+            getNome(), getCargo(), getIdade(), formatter.format(getSalario()));
+            // getNome(), getCargo(), getIdade(), getSalario());
     }
 
     @Override
