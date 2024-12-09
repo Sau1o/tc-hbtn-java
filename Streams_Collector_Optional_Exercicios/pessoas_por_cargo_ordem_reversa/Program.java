@@ -32,6 +32,7 @@ public class Program {
         System.out.println(pessoas2);
         System.out.println();
         System.out.println(pessoas3);
+        System.out.println();
     }
 }
 
