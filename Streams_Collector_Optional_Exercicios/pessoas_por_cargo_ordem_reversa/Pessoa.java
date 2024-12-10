@@ -1,5 +1,4 @@
-import java.text.NumberFormat;
-import java.util.Locale;
+import java.util.*;
 
 public class Pessoa implements Comparable {
     private int codigo;
@@ -7,9 +6,7 @@ public class Pessoa implements Comparable {
     private String cargo;
     private int idade;
     private double salario;
-
-    // NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
-    Locale.setDefault(new Locale("pt", "BR"));
+    
     public Pessoa(int codigo, String nome, String cargo, int idade, double salario) {
         this.codigo = codigo;
         this.nome = nome;
@@ -40,8 +37,8 @@ public class Pessoa implements Comparable {
 
     @Override
     public String toString() {
-        return String.format("[%d] %s %s %d %s", getCodigo(),
-            // getNome(), getCargo(), getIdade(), formatter.format(getSalario()));
+        Locale.setDefault(new Locale("pt", "BR"));
+        return String.format("[%d] %s %s %d R$ %f", getCodigo(),
             getNome(), getCargo(), getIdade(), getSalario());
     }
 
